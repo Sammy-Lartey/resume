@@ -337,6 +337,14 @@ section {
 }
 
 /* Download Section */
+#download {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
 .download-button {
     padding: 15px 30px;
     font-size: 18px;
