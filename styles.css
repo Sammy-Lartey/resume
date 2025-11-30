@@ -8,6 +8,51 @@ body {
     color: #5c7cba;
 }
 
+/* Navigation Bar */
+#navbar {
+    background-color: #1e3f7a;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+#navbar li {
+    margin: 0 10px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+#navbar a:hover {
+    background-color: #4A6E9D;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #4A6E9D;
+}
+
 h1 {
     font-size: 32px;
     font-weight: normal;
@@ -16,7 +61,7 @@ h1 {
 }
 
 .profession {
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 5px;
     color: #1e3f7a;
 }
@@ -26,6 +71,7 @@ h1 {
     font-size: 18px;
 }
 
+/* Section Headers */
 h2 {
     font-size: 28px;
     font-weight: normal;
@@ -34,10 +80,83 @@ h2 {
     margin-bottom: 20px;
     border-bottom: 2px solid #4A6E9D;
     display: inline-block;
+    padding-bottom: 5px;
 }
 
+/* Sections */
+section {
+    margin-top: 50px;
+    scroll-margin-top: 80px;
+}
+
+/* Education Section */
+.education-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #4A6E9D;
+}
+
+.degree {
+    font-size: 20px;
+    color: #1e3f7a;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.school {
+    font-size: 18px;
+    color: #5c7cba;
+    margin-bottom: 5px;
+}
+
+.date {
+    color: #5c7cba;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.relevant-coursework {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Work Experience */
+.work-experience {
+    margin-bottom: 35px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #4A6E9D;
+}
+
+.role {
+    font-size: 22px;
+    color: #1e3f7a;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.company {
+    font-size: 18px;
+    color: #5c7cba;
+    margin-bottom: 5px;
+}
+
+.duration {
+    color: #5c7cba;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* Projects */
 .project {
     margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #4A6E9D;
 }
 
 .project-title {
@@ -71,38 +190,19 @@ h2 {
     color: #5c7cba;
 }
 
-.work-experience {
-    margin-bottom: 35px;
-}
-
-.role {
-    font-size: 22px;
-    color: #1e3f7a;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.company {
-    font-size: 18px;
-    color: #5c7cba;
-    margin-bottom: 5px;
-}
-
-.duration {
-    color: #5c7cba;
-    margin-bottom: 15px;
-    font-style: italic;
-}
-
+/* Skills Grid */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-top: 20px;
 }
 
 .skill-category {
     margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
 }
 
 .skill-category-title {
@@ -110,48 +210,149 @@ h2 {
     color: #1e3f7a;
     margin-bottom: 10px;
     text-decoration: underline;
+    font-size: 18px;
 }
 
-.degree {
-    font-size: 20px;
+/* Certifications */
+#certifications .project-details li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* Contact Section */
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    font-weight: bold;
     color: #1e3f7a;
     margin-bottom: 5px;
-    font-weight: bold;
 }
 
-.school {
+#contact-form input,
+#contact-form textarea {
+    padding: 12px;
+    border: 1px solid #5c7cba;
+    border-radius: 5px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+}
+
+#contact-form button {
+    padding: 12px 30px;
+    background-color: #4A6E9D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     font-size: 18px;
-    color: #5c7cba;
-    margin-bottom: 5px;
+    align-self: flex-start;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #8A6D3D;
+}
+
+#form-status {
+    margin-top: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Download Section */
+#download {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.download-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4A6E9D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #8A6D3D;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 2px solid #4A6E9D;
 }
 
 #footer {
     font-size: 16px;
     font-weight: normal;
     color: #5c7cba;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    border-top: 2px solid #4A6E9D;
-    display: inline-block;
-    padding-top: 15px;
-}
-
-#download-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4A6E9D;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#download-btn:hover {
-    background-color: #8A6D3D;
 }
 
 .links {
     color: #1e3f7a;
     text-decoration: none;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #navbar li {
+        margin: 5px 0;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
 }
