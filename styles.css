@@ -5,12 +5,13 @@ body {
     margin: 10px auto;
     padding: 20px;
     background-color: white;
-    color: #5c7cba;
+    color: #4a678c; /* Darker blue for better contrast */
+    font-weight: 600; /* Make all text bolder */
 }
 
 /* Navigation Bar */
 #navbar {
-    background-color: #1e3f7a;
+    background-color: #1a3361; /* Darker blue */
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -39,10 +40,11 @@ body {
     padding: 8px 12px;
     border-radius: 3px;
     transition: background-color 0.3s;
+    font-weight: 600;
 }
 
 #navbar a:hover {
-    background-color: #4A6E9D;
+    background-color: #3a5a8c; /* Darker hover */
 }
 
 /* Header Section */
@@ -50,35 +52,37 @@ header {
     text-align: center;
     margin-bottom: 40px;
     padding-bottom: 20px;
-    border-bottom: 2px solid #4A6E9D;
+    border-bottom: 2px solid #3a5a8c; /* Darker blue */
 }
 
 h1 {
     font-size: 32px;
-    font-weight: normal;
+    font-weight: 700; /* Much bolder */
     margin-bottom: 10px;
-    color: #1e3f7a;
+    color: #1a3361; /* Darker blue */
 }
 
 .profession {
     font-size: 20px;
     margin-top: 5px;
-    color: #1e3f7a;
+    color: #1a3361; /* Darker blue */
+    font-weight: 700;
 }
 
 .contact {
     margin-bottom: 20px;
     font-size: 18px;
+    font-weight: 600;
 }
 
-/* Section Headers */
+/* Section Headers - Much Bolder */
 h2 {
     font-size: 28px;
-    font-weight: normal;
-    color: #1e3f7a;
+    font-weight: 800; /* Extra bold for section headers */
+    color: #1a3361; /* Darker blue */
     margin-top: 40px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #4A6E9D;
+    border-bottom: 2px solid #3a5a8c; /* Darker blue */
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -89,88 +93,97 @@ section {
     scroll-margin-top: 80px;
 }
 
-/* Education Section */
-.education-item {
+/* Common Card Style for All Sections */
+.education-item,
+.work-experience,
+.project,
+.skill-category,
+.contact-details,
+#download {
     margin-bottom: 30px;
-    padding: 20px;
+    padding: 25px;
     background-color: #f8f9fa;
     border-radius: 8px;
-    border-left: 4px solid #4A6E9D;
+    border-left: 4px solid #3a5a8c; /* Darker blue */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
+/* Hover effect for all cards */
+.education-item:hover,
+.work-experience:hover,
+.project:hover,
+.skill-category:hover,
+.contact-details:hover,
+#download:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Education Section */
 .degree {
     font-size: 20px;
-    color: #1e3f7a;
+    color: #1a3361; /* Darker blue */
     margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: 700; /* Bolder */
 }
 
 .school {
     font-size: 18px;
-    color: #5c7cba;
+    color: #4a678c; /* Darker blue */
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 .date {
-    color: #5c7cba;
+    color: #4a678c; /* Darker blue */
     margin-bottom: 10px;
     font-style: italic;
+    font-weight: 600;
 }
 
 .relevant-coursework {
     margin-top: 10px;
     font-size: 16px;
+    font-weight: 600;
 }
 
 /* Work Experience */
-.work-experience {
-    margin-bottom: 35px;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    border-left: 4px solid #4A6E9D;
-}
-
 .role {
     font-size: 22px;
-    color: #1e3f7a;
+    color: #1a3361; /* Darker blue */
     margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: 700; /* Bolder */
 }
 
 .company {
     font-size: 18px;
-    color: #5c7cba;
+    color: #4a678c; /* Darker blue */
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 .duration {
-    color: #5c7cba;
+    color: #4a678c; /* Darker blue */
     margin-bottom: 15px;
     font-style: italic;
+    font-weight: 600;
 }
 
 /* Projects */
-.project {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    border-left: 4px solid #4A6E9D;
-}
-
 .project-title {
     font-size: 22px;
-    color: #1e3f7a;
+    color: #1a3361; /* Darker blue */
     margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: 700; /* Bolder */
 }
 
 .project-date {
     font-size: 16px;
-    color: #5c7cba;
+    color: #4a678c; /* Darker blue */
     margin-bottom: 15px;
     font-style: italic;
+    font-weight: 600;
 }
 
 .project-details {
@@ -181,13 +194,15 @@ section {
 .project-details li {
     margin-bottom: 12px;
     position: relative;
+    font-weight: 600;
 }
 
 .project-details li::before {
     content: "→";
     position: absolute;
     left: -25px;
-    color: #5c7cba;
+    color: #4a678c; /* Darker blue */
+    font-weight: bold;
 }
 
 /* Skills Grid */
@@ -198,37 +213,60 @@ section {
     margin-top: 20px;
 }
 
-.skill-category {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-}
-
 .skill-category-title {
-    font-weight: bold;
-    color: #1e3f7a;
-    margin-bottom: 10px;
+    font-weight: 800; /* Extra bold */
+    color: #1a3361; /* Darker blue */
+    margin-bottom: 15px;
     text-decoration: underline;
     font-size: 18px;
 }
 
+.skill-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-category li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.skill-category li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #4a678c; /* Darker blue */
+    font-weight: bold;
+}
+
 /* Certifications */
+#certifications {
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3a5a8c;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+#certifications:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
 #certifications .project-details li {
     margin-bottom: 15px;
     font-size: 18px;
+    font-weight: 600;
 }
 
 /* Contact Section */
 .contact-info {
     margin-bottom: 30px;
-}
-
-.contact-details {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 15px;
+    font-weight: 600;
 }
 
 #contact-form {
@@ -244,23 +282,24 @@ section {
 }
 
 #contact-form label {
-    font-weight: bold;
-    color: #1e3f7a;
+    font-weight: 700; /* Bolder */
+    color: #1a3361; /* Darker blue */
     margin-bottom: 5px;
 }
 
 #contact-form input,
 #contact-form textarea {
     padding: 12px;
-    border: 1px solid #5c7cba;
+    border: 1px solid #4a678c; /* Darker blue */
     border-radius: 5px;
     font-family: 'Architects Daughter', cursive;
     font-size: 16px;
+    font-weight: 600;
 }
 
 #contact-form button {
     padding: 12px 30px;
-    background-color: #4A6E9D;
+    background-color: #3a5a8c; /* Darker blue */
     color: white;
     border: none;
     border-radius: 5px;
@@ -268,42 +307,37 @@ section {
     font-size: 18px;
     align-self: flex-start;
     transition: background-color 0.3s;
+    font-weight: 600;
 }
 
 #contact-form button:hover {
-    background-color: #8A6D3D;
+    background-color: #1a3361; /* Even darker blue */
+    transform: translateY(-2px);
 }
 
 #form-status {
     margin-top: 15px;
-    font-weight: bold;
+    font-weight: 700; /* Bolder */
     padding: 10px;
     border-radius: 5px;
 }
 
 /* Download Section */
-#download {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    margin-top: 50px;
-}
-
 .download-button {
     padding: 15px 30px;
     font-size: 18px;
-    background-color: #4A6E9D;
+    background-color: #3a5a8c; /* Darker blue */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
+    font-weight: 600;
 }
 
 .download-button:hover {
-    background-color: #8A6D3D;
-    transform: translateY(-2px);
+    background-color: #1a3361; /* Even darker blue */
+    transform: translateY(-3px);
 }
 
 /* Footer */
@@ -311,18 +345,19 @@ footer {
     text-align: center;
     margin-top: 60px;
     padding-top: 20px;
-    border-top: 2px solid #4A6E9D;
+    border-top: 2px solid #3a5a8c; /* Darker blue */
 }
 
 #footer {
     font-size: 16px;
-    font-weight: normal;
-    color: #5c7cba;
+    font-weight: 600;
+    color: #4a678c; /* Darker blue */
 }
 
 .links {
-    color: #1e3f7a;
+    color: #1a3361; /* Darker blue */
     text-decoration: none;
+    font-weight: 600;
 }
 
 .links:hover {
@@ -354,5 +389,14 @@ footer {
     
     h2 {
         font-size: 24px;
+    }
+    
+    .education-item,
+    .work-experience,
+    .project,
+    .skill-category,
+    .contact-details,
+    #download {
+        padding: 20px;
     }
 }
